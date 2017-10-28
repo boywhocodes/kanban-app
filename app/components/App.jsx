@@ -41,9 +41,5 @@ export default class App extends React.Component {
       }])
     });
   }
-  deleteNote = () => {
-    this.setState({
-      return
-    })  
-  }
+  
 }
