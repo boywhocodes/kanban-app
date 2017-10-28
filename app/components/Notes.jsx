@@ -14,7 +14,7 @@ const notes = [
     task: 'Do laundry'
   }
 ];
-
+  
 
 export default () => (
   <ul>{notes.map(note =>
