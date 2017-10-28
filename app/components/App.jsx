@@ -26,7 +26,6 @@ export default class App extends React.Component {
     return (
         <div>
           <button onClick={this.addNote}>+</button>
-          <button onClick={this.deleteNote}>X</button>
           <input type='tel'></input>
           <Notes notes={notes} /> // the rendering of notes which as described above, is the rendering of the current state
         </div>
@@ -41,5 +40,5 @@ export default class App extends React.Component {
       }])
     });
   }
-  
+
 }
