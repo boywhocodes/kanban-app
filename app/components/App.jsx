@@ -41,4 +41,12 @@ export default class App extends React.Component {
     });
   }
 
+  deleteNote = () => {
+    e.stopPropagation();
+
+    this.setState({
+      notes: this.state.notes.filter(note => note.id !== id)
+    })
+  }
+
 }
