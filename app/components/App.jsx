@@ -26,8 +26,8 @@ export default class App extends React.Component {
     return (
         <div>
           <button onClick={this.addNote}>+</button>
-          <input type='tel'></input>
-          <Notes notes={notes} /> // the rendering of notes which as described above, is the rendering of the current state
+          <Notes notes={notes} onDelete={this.deleteNote} /> // the rendering of notes which as described above, is the rendering of the current state
+
         </div>
     )
   }
