@@ -41,7 +41,7 @@ export default class App extends React.Component {
     });
   }
 
-  deleteNote = () => {
+  deleteNote = (id, e) => {
     e.stopPropagation();
 
     this.setState({
