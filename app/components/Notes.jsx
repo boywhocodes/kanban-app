@@ -3,14 +3,12 @@ import React from 'react';
 import Note from './Note';
 
 
-// export default ({notes, onDelete=()=>{}}) => (
-//   <ul>{notes.map(({id,task}) =>
-//     <li key={id}><Note onDelete={onDelete.bind(null, id)} task={task} /></li> // Without binding the id, we can't access it later
-//     )}
-//   </ul>
-// )
-export default ({children, ...props}) => (
-  <div {...props}>
-    {children}
-  </div>
+export default ({notes, onDelete=() => {}}) => (
+  <ul>{notes.map(({id, task}) => <li key={id}>
+    <Note>
+      <span>{task}</span>
+      <button onClick={onDelete.bind(null, id)}>x</button>
+    </Note>
+  </li>
+)}</ul>
 )
