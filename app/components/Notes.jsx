@@ -9,3 +9,8 @@ import Note from './Note';
 //     )}
 //   </ul>
 // )
+export default ({children, ...props}) => (
+  <div {...props}>
+    {children}
+  </div>
+)
