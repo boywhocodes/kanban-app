@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default ({editing, calue, onEdit, ...props}) => {
+export default ({editing, value, onEdit, ...props}) => {
   if(editing) {
     return <Edit value={value} onEdit={onEdit} {...props} />;
   }
